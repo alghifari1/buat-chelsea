@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for my love</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+        .container {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+        }
+        .audio-controls {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="audio-controls">
+        <button onclick="document.getElementById('background-audio').play()">music <3</button>
+    </div>
+    <div class="container">
+        <img src="imej.jpg" alt="Website Image">
+    </div>
+    <audio id="background-audio" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
